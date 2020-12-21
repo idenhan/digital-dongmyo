@@ -4,11 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 // View -> UI View
 export default function App() {
+  let x = 1;
+  
   console.log("App executed");
 
-  let x;
-  x.toString();
-  
   return (
     <View style={styles.container}>
       <Text>Hello, Toggle</Text>

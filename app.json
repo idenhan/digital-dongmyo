@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Digitalising a traditional marketplace in North Seoul for selling the stuff bargain-priced."
   }
 }
