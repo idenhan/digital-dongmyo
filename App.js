@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 
 // View -> UI View
 export default function App() {
@@ -11,6 +11,7 @@ export default function App() {
       <Text numberOfLines={1} onPress={handlePress}>
         Hello, Toggle! - A really really long text. Now I wanna make this even longer and see what happens.
       </Text>
+      <Image />
     </SafeAreaView>
   );
 }
@@ -18,6 +19,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'dodgerblue'
+    backgroundColor: "#fff",
+    justifyContent: "center",
+    alignContent: "center"
   },
 });
