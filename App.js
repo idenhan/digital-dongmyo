@@ -4,23 +4,24 @@ import { useDimensions, useDeviceOrientation } from "@react-native-community/hoo
 
 // View -> UI View
 export default function App() {
-  const { landscape } = useDeviceOrientation();
   return (
-    <SafeAreaView style={styles.container}>
-      <View 
-        sytle={{
-          backgroundColor: "dodgerblue",
-          width: "100%",
-          height: "30%"
-        }}
-      ></View>
-    </SafeAreaView>
-  );
+    <View style={{
+      backgroundColor: "#fff",
+      flex: 1,
+    }}>
+      <View style={{
+        backgroundColor: "dodgerblue",
+        flex: 2,
+      }}/>
+      <View style={{
+        backgroundColor: "gold",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "tomato",
+        flex: 1,
+      }}/>
+    </View>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff"
-  },
-});
