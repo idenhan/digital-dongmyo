@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, Platform } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 // <Heading>My Heading</Heading>
 function AppText({ children }) {
@@ -11,16 +11,8 @@ function AppText({ children }) {
 const styles = StyleSheet.create({
   text: {
     color: 'tomato',
-    ...Platform.select({
-      ios: {
-        fontSize: 20,
-        fontFamily: "Avenir"
-      },
-      android: {
-        fontSize: 18,
-        fontFamily: 'Roboto'
-      },
-    }),
+    fontSize: 20,
+    fontFamily: "Avenir",
   },
 })
 

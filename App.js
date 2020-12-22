@@ -16,7 +16,7 @@ export default function App() {
         alignItems: 'center',
       }}
     >
-      <MaterialCommunityIcons name='email' size={100} color='orange' />
+      <AppText>I Love Toggle!</AppText>
     </View>
   );
 }
