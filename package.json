@@ -29,10 +29,5 @@
   "devDependencies": {
     "@babel/core": "~7.9.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo \"This is printed before commit\""
-    },
-  },
   "private": true
 }

@@ -15,3 +15,9 @@ export default function App() {
     <AccountScreen />
   );
 }
+
+// "husky": {
+  //   "hooks": {
+  //     "pre-commit": "yarn run lint"
+  //   }
+  // },
