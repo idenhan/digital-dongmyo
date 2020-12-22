@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 
@@ -15,7 +16,7 @@ export default function App() {
         alignItems: 'center',
       }}
     >
-      <AppText>안녕하세요, 토글 여보</AppText>
+      <MaterialCommunityIcons name='email' size={100} color='orange' />
     </View>
   );
 }
