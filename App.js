@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 
@@ -11,32 +11,20 @@ export default function App() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        fontSize: 10,
       }}
     >
-      <View 
-        style={{
-          backgroundColor: 'dodgerblue',
-          width: 100,
-          height: 100,
-          padding: 20,
-          paddingHorizontal: 10,
-          
-        }}
-      >
-        <View 
-          style={{
-            backgroundColor: 'gold',
-            width: 50,
-            height: 50,
-          }}
-        ></View>  
-      </View>
-      <View style={{
-        backgroundColor: 'tomato',
-        width: 100,
-        height: 100,
-        margin: 20
-      }}></View>
+      <Text style={{
+        // fontFamily: 'Courier',
+        fontSize: 30,
+        fontStyle: 'italic',
+        fontWeight: '600',
+        color: 'tomato',
+        textTransform: 'capitalize',
+        textDecorationLine: 'line-through',
+        textAlign: 'center',
+        lineHeight: 30,
+      }}>I love Toggle! This is my first toggle app! Here's some more text.</Text>
     </View>
   );
 }
