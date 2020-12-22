@@ -9,15 +9,5 @@ import AppButton from './app/components/AppButton';
 
 // View -> UI View
 export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <AppButton title='Login' onPress={() => alert('Button Tapped') }/>
-    </View>
-  );
+  return <WelcomeScreen />;
 }
