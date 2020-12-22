@@ -10,14 +10,13 @@ export default function App() {
       flex: 1,
       flexDirection: "row", // horizontal
       justifyContent: "center", // main
-      alignItems: "center",
-      alignContent: "center", // only works if there is wrapping
-      flexWrap: "wrap" // secondary
+      alignItems: "center", // secondary
     }}>
       <View style={{
         backgroundColor: "dodgerblue",
-        width: 100,
-        height: 300,
+        width: 400,
+        flexShrink: 1, // equal to flex : -1
+        height: 100,
       }}/>
       <View style={{
         backgroundColor: "gold",
@@ -26,16 +25,6 @@ export default function App() {
       }}/>
       <View style={{
         backgroundColor: "tomato",
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: "grey",
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: "greenyellow",
         width: 100,
         height: 100
       }}/>
