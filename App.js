@@ -15,7 +15,8 @@ export default function App() {
       <View style={{
         backgroundColor: "dodgerblue",
         width: 100,
-        height: 300
+        height: 300,
+        alignSelf: "flex-start"
       }}/>
       <View style={{
         backgroundColor: "gold",
