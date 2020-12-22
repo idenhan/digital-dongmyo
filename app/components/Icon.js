@@ -2,8 +2,6 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-console.log();
-
 function Icon({
   name,
   size = 40,
