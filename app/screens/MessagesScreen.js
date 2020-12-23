@@ -2,26 +2,28 @@ import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 
 import Screen from "../components/Screen";
-import ListItem from "../components/ListItem";
-import ListItemSeperator from "../components/ListItemSeperator";
-import ListItemDeleteAction from "../components/ListItemDeleteAction";
+import {
+  ListItem,
+  ListItemDeleteAction,
+  ListItemSeparator,
+} from "../components/lists";
 
 const initialMessages = [
   {
     id: 1,
     title: "T1",
     description: "D1",
-    image: require("../assets/iden.jpg"),
+    image: require("../assets/mosh.jpg"),
   },
   {
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("../assets/iden.jpg"),
+    image: require("../assets/mosh.jpg"),
   },
 ];
 
-function MessageScreen(props) {
+function MessagesScreen(props) {
   const [messages, setMessages] = useState(initialMessages);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -46,7 +48,7 @@ function MessageScreen(props) {
             )}
           />
         )}
-        ItemSeparatorComponent={ListItemSeperator}
+        ItemSeparatorComponent={ListItemSeparator}
         refreshing={refreshing}
         onRefresh={() => {
           setMessages([
@@ -54,7 +56,7 @@ function MessageScreen(props) {
               id: 2,
               title: "T2",
               description: "D2",
-              image: require("../assets/iden.jpg"),
+              image: require("../assets/mosh.jpg"),
             },
           ]);
         }}
@@ -65,4 +67,4 @@ function MessageScreen(props) {
 
 const styles = StyleSheet.create({});
 
-export default MessageScreen;
+export default MessagesScreen;
