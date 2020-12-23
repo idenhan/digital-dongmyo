@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Image, StyleSheet } from "react-native";
+import { Formik } from "formik";
 
 import AppTextInput from "../components/AppTextInput";
 import AppButton from "../components/AppButton";
