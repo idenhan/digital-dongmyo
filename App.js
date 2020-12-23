@@ -21,9 +21,17 @@ export default function App() {
     { label: "Cameras", value: 3 },
   ];
 
+  const [category, setCategory] = useState(categories[0]);
+
   return (
     <Screen>
-      <AppPicker items={categories} icon="apps" placeholder="Catergory" />
+      <AppPicker
+        selectedItem={category}
+        onSelectItem={(item) => setCategory(item)}
+        items={categories}
+        icon="apps"
+        placeholder="Catergory"
+      />
       <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
