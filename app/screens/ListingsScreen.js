@@ -13,13 +13,14 @@ const listings = [
     image: require("../assets/jacket.jpg"),
   },
   {
-    id: 22,
+    id: 2,
     title: "Couch in great condition",
     price: 1000,
     image: require("../assets/couch.jpg"),
   },
 ];
 
+// comment for test2
 function ListingsScreen(props) {
   return (
     <Screen style={styles.screen}>
