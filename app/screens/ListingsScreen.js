@@ -13,7 +13,7 @@ const listings = [
     image: require("../assets/jacket.jpg"),
   },
   {
-    id: 2,
+    id: 22,
     title: "Couch in great condition",
     price: 1000,
     image: require("../assets/couch.jpg"),
