@@ -29,5 +29,10 @@
   "devDependencies": {
     "@babel/core": "~7.9.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint"
+    }
+  },
   "private": true
 }
