@@ -20,7 +20,7 @@ const listings = [
   },
 ];
 
-// comment for test2
+// comment for test3
 function ListingsScreen(props) {
   return (
     <Screen style={styles.screen}>
