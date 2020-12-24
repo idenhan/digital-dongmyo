@@ -11,6 +11,8 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import AuthNavigator from "./app/navigation/AuthNavigator";
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
+// import FeedNavigator from "./app/navigation/FeedNavigator";
+// import AccountNavigator from "./app/navigation/AccountNavigator";
 
 const Link = () => {
   const navigation = useNavigation();
