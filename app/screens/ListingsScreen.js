@@ -9,38 +9,26 @@ import Screen from "../components/Screen";
 import routes from "../navigation/routes";
 import listingsApi from "../api/listings";
 import AppText from "../components/Text";
+import useApi from "../hooks/useApi";
 
 function ListingsScreen({ navigation }) {
-  const [listings, setListings] = useState([]);
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const getLisitngsApi = useApi(listingsApi.getListings);
 
   useEffect(() => {
-    loadListings();
+    getLisitngsApi.request(1, 2, 3);
   }, []);
-
-  const loadListings = async () => {
-    setLoading(true);
-    const response = await listingsApi.getListings();
-    setLoading(false);
-
-    if (!response.ok) return setError(true);
-
-    setError(false);
-    setListings(response.data);
-  };
 
   return (
     <Screen style={styles.screen}>
-      {error && (
+      {getLisitngsApi.error && (
         <>
           <AppText>Couldn't retrieve the listings.</AppText>
-          <Button title="Retry" onPress={loadListings} />
+          <Button title="Retry" onPress={getLisitngsApi.loadListings} />
         </>
       )}
-      <ActivityIndicator visible={loading} />
+      <ActivityIndicator visible={getLisitngsApi.loading} />
       <FlatList
-        data={listings}
+        data={getLisitngsApi.data}
         keyExtractor={(listing) => listing.id.toString()}
         renderItem={({ item }) => (
           <Card
