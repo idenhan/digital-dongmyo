@@ -9,6 +9,7 @@
     "lint": "eslint app --fix"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.13.2",
     "@react-native-community/hooks": "2.6.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-native-community/netinfo": "5.9.7",
@@ -30,6 +31,7 @@
     "formik": "2.2.6",
     "husky": "^4.3.6",
     "lottie-react-native": "~2.6.1",
+    "moment": "2.29.1",
     "prettier": "^2.2.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
