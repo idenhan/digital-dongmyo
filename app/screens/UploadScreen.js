@@ -30,13 +30,13 @@ function UploadScreen({ onDone, progress = 0, visible = false }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    justifyContent: "center",
-    flex: 1,
-  },
   animation: {
     width: 150,
+  },
+  container: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
   },
 });
 
