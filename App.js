@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import jwtDecode from "jwt-decode";
+import { AppLoading } from "expo";
 
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
@@ -11,6 +12,7 @@ import authStorage from "./app/auth/storage";
 
 export default function App() {
   const [user, setUser] = useState();
+  const [isReady, setIsReady] = useState(false);
 
   const restoreToken = async () => {
     const token = await authStorage.getToken();
