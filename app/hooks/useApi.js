@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-// eslint-disable-next-line no-undef
-export default useApi = (apiFunc) => {
+const useApi = (apiFunc) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -11,11 +10,13 @@ export default useApi = (apiFunc) => {
     const response = await apiFunc(...args);
     setLoading(false);
 
-    if (!response.ok) return setError(true);
-
-    setError(false);
+    setError(!response.ok);
     setData(response.data);
+
+    return response;
   };
 
   return { data, error, loading, request };
 };
+
+export default useApi;
