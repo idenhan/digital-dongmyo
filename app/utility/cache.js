@@ -1,6 +1,5 @@
 import { AsyncStorage } from "@react-native-async-storage/async-storage";
 import dayjs from "dayjs";
-import uniqueId from "lodash/uniqueId";
 
 const prefix = "cache";
 const expiryInMinutes = 5;
