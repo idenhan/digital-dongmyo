@@ -2,6 +2,7 @@
   "expo": {
     "name": "digital-dongmyo",
     "slug": "digital-dongmyo",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -17,7 +18,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.idenhan.digitaldongmyo",
+      "buildNumber": "1.0.0"
     },
     "description": "Digitalising a traditional marketplace in North Seoul for selling the stuff bargain-priced.",
     "extra": {
