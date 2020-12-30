@@ -18,9 +18,9 @@ export default function App() {
     if (user) setUser(user);
   };
 
-  useEffect(() => {
-    restoreUser();
-  }, []);
+  // useEffect(() => {
+  //   restoreUser();
+  // }, []);
 
   /* useEffect 대신해 비동기로 처리하고자 하는데, Splash Screen에서 더 넘어가지 않는 이슈 발생*/
   // if (!isReady)
