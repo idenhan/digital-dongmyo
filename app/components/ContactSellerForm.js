@@ -19,12 +19,12 @@ function ContactSellerForm({ listing }) {
 
     resetForm();
 
-    const notif = Notifications.presentLocalNotificationAsync({
+    // Simulator calls an error like "Notifications is not a function",
+    // It's only due to lack of Platform Compatibility. Works in apps fine.
+    Notifications.presentLocalNotificationAsync({
       title: "Awesome!",
       body: "Your message was sent to the seller.",
     });
-
-    notif();
   };
 
   return (
