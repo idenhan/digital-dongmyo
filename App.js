@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import AppLoading from "expo-app-loading";
+// import AppLoading from "expo-app-loading";
 
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
@@ -11,16 +11,16 @@ import authStorage from "./app/auth/storage";
 
 export default function App() {
   const [user, setUser] = useState();
-  const [isReady, setIsReady] = useState(false);
+  // const [isReady, setIsReady] = useState(false);
 
   const restoreUser = async () => {
     const user = await authStorage.getUser();
     if (user) setUser(user);
   };
 
-  // useEffect(() => {
-  //   restoreUser();
-  // }, []);
+  useEffect(() => {
+    restoreUser();
+  }, []);
 
   /* useEffect 대신해 비동기로 처리하고자 하는데, Splash Screen에서 더 넘어가지 않는 이슈 발생*/
   // if (!isReady)
